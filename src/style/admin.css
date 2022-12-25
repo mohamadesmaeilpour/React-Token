@@ -1,0 +1,16 @@
+
+.admin{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.admin button{
+    width: 7%;
+    height:7% ;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: coral;
+}

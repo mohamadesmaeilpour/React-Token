@@ -1,0 +1,118 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #9699cf14;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.navbar>.leftSide{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+    padding-left: 150px;
+
+}
+.navbar .hiddenLink{
+    height: 100%;
+   display: flex;
+   color: white;
+   align-items: center;
+
+
+}
+.navbar .hiddenLink a{
+    height: 100%;
+    
+}
+.navbar>.leftSide>img{
+    width: 70px;
+}
+.navbar>.rightSide{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.rightSide>a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+@media screen and (max-width:600px){
+    .navbar>.rightSide{
+    justify-content:flex-end;
+    padding-right: 50px;
+    }
+    .rightSide>a{
+        display: none;
+    }
+    
+    .navbar>.rightSide>button{
+        display: inherit;
+    }
+}
+@media screen and (min-width:600px){
+    .rightSide>a{
+        display: flex;
+    }
+    .navbar>.rightSide>button{
+        display: none;
+    }
+    .hiddenLink{
+        display: none;
+    }
+    .hiddenLink a{
+        display: none;
+    }
+    
+
+}
+
+.navbar>.rightSide>button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar #open{
+    padding-left: 0px;
+}
+.navbar #open img{
+    display: none;
+}
+.navbar #close img{
+    display: inherit;
+}
+
+.navbar #close .hiddenLink{
+    display: none;
+    
+}
+.navbar #open a{
+    width: 70px;
+    margin: 10px;
+    height: 100px;
+}
+.navbar #open a{
+    width: 70px;
+    margin: 5px;
+    height: 100px;
+}
